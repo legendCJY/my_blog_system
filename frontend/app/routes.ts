@@ -1,0 +1,26 @@
+import { index, route, type RouteConfig } from "@react-router/dev/routes";
+
+export default [
+  index("routes/home.tsx"),
+  route("articles/:slug", "routes/article.tsx"),
+  route("categories", "routes/categories.tsx"),
+  route("categories/:slug", "routes/category.tsx"),
+  route("tags", "routes/tags.tsx"),
+  route("tags/:slug", "routes/tag.tsx"),
+  route("archive", "routes/archive.tsx"),
+  route("archive/:year", "routes/archive-year.tsx"),
+  route("about", "routes/about.tsx"),
+  route("search", "routes/search.tsx"),
+  route("admin", "routes/admin-index.tsx"),
+  route("admin/login", "routes/admin-login.tsx"),
+  route("admin/logout", "routes/admin-logout.ts"),
+  route("admin/articles", "routes/admin-articles.tsx"),
+  route("admin/articles/new", "routes/admin-article-new.tsx"),
+  route("admin/articles/preview", "routes/admin-article-preview-action.ts"),
+  route("admin/articles/:id/edit", "routes/admin-article-edit.tsx"),
+  route("admin/articles/:id/preview", "routes/admin-preview.tsx"),
+  route("admin/categories", "routes/admin-categories.tsx"),
+  route("admin/tags", "routes/admin-tags.tsx"),
+  route("admin/about", "routes/admin-about.tsx"),
+  route("*", "routes/not-found.tsx"),
+] satisfies RouteConfig;

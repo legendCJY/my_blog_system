@@ -17,5 +17,5 @@
 
 ## GitHub 版本管理
 
-- 远程仓库为 `https://github.com/legendCJY/my_blog_system.git`，通过 `origin/main` 管理版本。每次完成并检查通过后，审阅变更范围，提交本次相关文件并推送。
+- 代码和 Markdown 改动完成检查后，保留在本地工作区供用户确认。收到用户明确要求提交到 GitHub 后，核对本次授权的文件范围，再创建提交并推送至 `origin/main`。远程仓库为 `https://github.com/legendCJY/my_blog_system.git`。
 - `.env.example` 仅记录配置名和示例值。实际密钥、本地环境文件、数据库数据及上传文件放在版本控制之外。

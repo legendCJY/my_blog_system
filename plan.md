@@ -173,7 +173,7 @@ TypeScript 用于前端的页面数据、编辑表单和 API 类型。React Rout
 
 ### GitHub 版本管理
 
-项目的 `origin` 为 [legendCJY/my_blog_system](https://github.com/legendCJY/my_blog_system)。每次代码版本或项目文档更新完成并通过相应检查后，提交到 `main` 并推送至 `origin/main`。提交前检查变更范围，真实环境配置、密钥和本地数据保存在 Git 之外。
+项目的 `origin` 为 [legendCJY/my_blog_system](https://github.com/legendCJY/my_blog_system)。代码和 Markdown 更新通过检查后，保留在本地工作区供用户确认。收到用户明确要求提交到 GitHub 后，按本次确认的范围提交到 `main` 并推送至 `origin/main`。真实环境配置、密钥和本地数据保存在 Git 之外。
 
 ### Windows 与 PyCharm
 

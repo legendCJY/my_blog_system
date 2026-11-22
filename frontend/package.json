@@ -1,0 +1,35 @@
+{
+  "name": "personal-blog-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "dev": "react-router dev",
+    "build": "react-router build",
+    "start": "react-router-serve ./build/server/index.js",
+    "typecheck": "react-router typegen && tsc --noEmit",
+    "test:e2e": "uv run --no-cache --no-sync --directory ../backend python -m tests.run_e2e",
+    "check": "uv run --no-cache --no-sync --directory ../backend pytest --with-postgres && npm run typecheck && npm run build && npm run test:e2e"
+  },
+  "dependencies": {
+    "@react-router/node": "^7.14.0",
+    "@react-router/serve": "^7.14.0",
+    "isbot": "^5.1.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router": "^7.14.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.1",
+    "@react-router/dev": "^7.14.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vercel/react-router": "^1.3.1",
+    "typescript": "~5.9.3",
+    "vite": "^8.0.0"
+  }
+}

@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+.cache/
+.local/
+.idea/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+node_modules/
+.react-router/
+build/
+test-results/
+playwright-report/
+.vercel/
